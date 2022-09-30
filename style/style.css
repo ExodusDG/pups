@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .main {
     background: linear-gradient(180deg, #7FA9AA 0%, #A5D1CB 100%);
     width: 100vw;
@@ -100,8 +104,11 @@
 
 .links svg {
     width: 50px;
+    transition: 0.3s;
 }
-
+.links svg:hover {
+    transform: scale(1.2);
+}
 .links path {
     fill: #E1ECED;
 }
