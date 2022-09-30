@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-body {
+body, html {
     overflow-x: hidden;
 }
 
@@ -95,12 +95,23 @@ body {
     }
 }
 
-@media (max-width: 491px) {
+@media (max-width: 768px) {
     .clouds {
-        width: 80%;
+        padding-top: 20vh;
     }
     .imageText {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 491px) {
+    .imageText {
         width: 90%;
+    }
+    .clouds {
+        width: 80%;
+        left: 50%;
+        position: relative;
     }
 }
 
