@@ -13,7 +13,7 @@
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 .imageText img {
@@ -25,7 +25,7 @@
     max-width: 1120px;
     margin: 0 auto;
     width: 100%;
-    padding-top: 50px;
+    padding-top: 25px;
 }
 
 .clouds img {
@@ -45,14 +45,24 @@
 /* CLOUD ANIMATIONS */
 
 
-.cloud {
-    animation: move 6s ease infinite;
+
+@-webkit-keyframes animateCloud {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 100%;
+    }
 }
 
-@keyframes move {
-    50% {
-        transform: translateY(-20px);
-    }
+.clouds img {
+	-webkit-animation: animateCloud 65s linear infinite;
+	-moz-animation: animateCloud 65s linear infinite;
+	animation: animateCloud 65s linear infinite;
+	
+	-webkit-transform: scale(0.65);
+	-moz-transform: scale(0.65);
+	transform: scale(0.65);
 }
 
 @media (max-width: 1501px) {
@@ -77,4 +87,21 @@
     .imageText {
         width: 90%;
     }
+}
+
+.links {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.links svg {
+    width: 50px;
+}
+
+.links path {
+    fill: #E1ECED;
 }
