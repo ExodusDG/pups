@@ -14,10 +14,10 @@ body {
 }
 
 .imageText {
-    max-width: 1400px;
+    max-width: 1300px;
     width: 100%;
     margin: 0 auto;
-    margin-top: 0px;
+    margin-top: -50px;
 }
 
 .imageText img {
@@ -59,7 +59,7 @@ body {
     }
 }
 
-.clouds img {
+.cloud-1 {
 	-webkit-animation: animateCloud 65s linear infinite;
 	-moz-animation: animateCloud 65s linear infinite;
 	animation: animateCloud 65s linear infinite;
@@ -68,7 +68,18 @@ body {
 	-moz-transform: scale(0.65);
 	transform: scale(0.65);
 }
-
+.cloud-2 {
+    position: relative;
+    left: 30%;
+}
+.cloud-3 {
+    position: relative;
+    right: 300%;
+}
+.cloud-4 {
+    position: relative;
+    right: 400%;
+}
 @media (max-width: 1501px) {
     .clouds {
         width: 70%;
@@ -111,4 +122,8 @@ body {
 }
 .links path {
     fill: #E1ECED;
+}
+
+.clouds {
+    display: flex;
 }
