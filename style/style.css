@@ -104,20 +104,11 @@ body, html {
     }
 }
 
-@media (max-width: 491px) {
-    .imageText {
-        width: 90%;
-    }
-    .clouds {
-        width: 80%;
-        left: 50%;
-        position: relative;
-    }
-}
+
 
 .links {
     display: flex;
-    width: 200px;
+    width: 150px;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
@@ -137,4 +128,19 @@ body, html {
 
 .clouds {
     display: flex;
+}
+
+@media (max-width: 491px) {
+    .imageText {
+        width: 90%;
+    }
+    .clouds {
+        width: 80%;
+        left: 50%;
+        position: relative;
+    }
+    .links {
+        width: 155px;
+        margin-top: 120px;
+    }
 }
